@@ -22,14 +22,14 @@ jobs:
         dotnet-version: 7.0.x
     # You can test your matrix by printing the current dotnet version
     - name: Display dotnet version
-      working-directory: ../../console/
+      working-directory: ./console/
       run: dotnet --version
     - name: Restore dependencies
-      working-directory: ../../console/
+      working-directory: ./console/
       run: dotnet restore
     - name: Build
-      working-directory: ../../console/
+      working-directory: ./console/
       run: dotnet build --no-restore
     - name: Test
-      working-directory: ../../console/
+      working-directory: ./console/
       run: dotnet test --no-build --verbosity normal
