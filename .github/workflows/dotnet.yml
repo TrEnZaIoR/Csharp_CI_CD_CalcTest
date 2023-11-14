@@ -31,5 +31,5 @@ jobs:
       working-directory: ./console/
       run: dotnet build --no-restore
     - name: Test
-      working-directory: ./console/
+      working-directory: ./Kalculate/
       run: dotnet test --no-build --verbosity normal
