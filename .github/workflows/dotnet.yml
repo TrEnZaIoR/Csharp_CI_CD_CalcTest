@@ -30,6 +30,9 @@ jobs:
     - name: Build
       working-directory: ./console/
       run: dotnet build --no-restore
+    - name: Run
+      working-directory: ./console/
+      run: dotnet run --no-restore
     - name: Test
       working-directory: ./Kalculate/
       run: dotnet test 
