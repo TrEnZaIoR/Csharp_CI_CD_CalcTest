@@ -46,6 +46,8 @@ on:
 
 jobs:
 
+ 
+
   build:
 
     strategy:
@@ -57,9 +59,9 @@ jobs:
 
     env:
       Solution_Name: Csharp_CI_CD_CalcTest                      # Replace with your solution name, i.e. MyWpfApp.sln.
-      Test_Project_Path: Csharp_CI_CD_CalcTest\Kalculate\Kalculate.csproj         # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
-      Wap_Project_Directory: Csharp_CI_CD_CalcTest\console\   # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
-      Wap_Project_Path: Csharp_CI_CD_CalcTest\console\console.csproj                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
+      Test_Project_Path: ..\..\Kalculate\Kalculate.csproj        # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+      Wap_Project_Directory: ..\..\console\   # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
+      Wap_Project_Path: ..\..\console\console.csproj                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
     steps:
     - name: Checkout
@@ -71,13 +73,14 @@ jobs:
     - name: Install .NET Core
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 7.0.x
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
 
     # Execute all unit tests in the solution
+    
     - name: Execute unit tests
       run: dotnet test
 
