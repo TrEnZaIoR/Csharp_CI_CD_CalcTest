@@ -33,9 +33,9 @@ jobs:
     - name: Run
       working-directory: ./console/
       run: dotnet run --no-restore |
-        echo '1'
-        echo '2'
-        echo 'Add'
+        '1'
+        '2'
+        'Add'
     - name: Test
       working-directory: ./Kalculate/
       run: dotnet test 
