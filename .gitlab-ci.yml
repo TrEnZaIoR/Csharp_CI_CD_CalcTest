@@ -1,0 +1,35 @@
+image: mcr.microsoft.com/dotnet/core/sdk:7.0
+stages:
+  - print
+  - run_app
+  - run_test
+
+run_app:
+  stage: run_app
+  script: 
+    - cd console
+    - dotnet build
+    - bash -c "dotnet run | echo ${MY_INPUT_DATA} | echo ${MY_INPUT_DATA1} | echo ${MY_INPUT_DATA2}"
+    - dotnet run && sleep 1 &&  echo ${MY_INPUT_DATA} 
+    - sleep 1 
+    - echo ${MY_INPUT_DATA1} 
+    - sleep 1 
+    - echo ${MY_INPUT_DATA2} 
+    - sleep 1  
+    
+  variables:
+    MY_INPUT_DATA: "1"
+    MY_INPUT_DATA1: "2"
+    MY_INPUT_DATA2: "Add"
+
+run_test:
+  stage: run_test
+  script: 
+    - cd Kalculate
+    - dotnet build
+    - dotnet test
+
+print_message:
+  stage: print
+  script:
+    - echo "Это написано в GitLab CI/CD"

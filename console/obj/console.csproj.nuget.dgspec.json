@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/anton/Загрузки/test/console/console.csproj": {}
+  },
+  "projects": {
+    "/home/anton/Загрузки/test/ClassLibraryCallkulate/ClassLibraryCallkulate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/anton/Загрузки/test/ClassLibraryCallkulate/ClassLibraryCallkulate.csproj",
+        "projectName": "ClassLibraryCallkulate",
+        "projectPath": "/home/anton/Загрузки/test/ClassLibraryCallkulate/ClassLibraryCallkulate.csproj",
+        "packagesPath": "/home/anton/.nuget/packages/",
+        "outputPath": "/home/anton/Загрузки/test/ClassLibraryCallkulate/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/anton/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/anton/Загрузки/test/console/console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/anton/Загрузки/test/console/console.csproj",
+        "projectName": "console",
+        "projectPath": "/home/anton/Загрузки/test/console/console.csproj",
+        "packagesPath": "/home/anton/.nuget/packages/",
+        "outputPath": "/home/anton/Загрузки/test/console/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/anton/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/anton/Загрузки/test/ClassLibraryCallkulate/ClassLibraryCallkulate.csproj": {
+                "projectPath": "/home/anton/Загрузки/test/ClassLibraryCallkulate/ClassLibraryCallkulate.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
