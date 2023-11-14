@@ -32,10 +32,9 @@ jobs:
       run: dotnet build --no-restore
     - name: Run
       working-directory: ./console/
-      run: | 
-        dotnet run --no-restore 
-        echo '1'
-        echo '2'
+      run: dotnet run --no-restore |
+        echo '1' |
+        echo '2' |
         echo 'Add'
     - name: Test
       working-directory: ./Kalculate/
